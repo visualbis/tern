@@ -23,7 +23,7 @@
     "resolve-from": "2.0.0"
   },
   "devDependencies": {
-    "codemirror": "git://github.com/codemirror/CodeMirror.git"
+    "codemirror": "^5.49.2"
   },
   "blint": {
     "allowedGlobals": [

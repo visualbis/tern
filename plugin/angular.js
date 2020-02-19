@@ -1,9 +1,9 @@
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
     return mod(require("../lib/infer"), require("../lib/tern"), require("../lib/comment"),
-               require("acorn-walk"));
+               require("acorn-walk/dist/walk.js"));
   if (typeof define == "function" && define.amd) // AMD
-    return define(["../lib/infer", "../lib/tern", "../lib/comment", "acorn-walk/dist/walk"], mod);
+    return define(["../lib/infer", "../lib/tern", "../lib/comment", "acorn-walk/dist/walk.js"], mod);
   mod(tern, tern, tern.comment, acorn.walk);
 })(function(infer, tern, comment, walk) {
   "use strict";
